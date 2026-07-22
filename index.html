@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fhill KLO | Lead Systems & Operations Engineer</title>
+    <meta name="description" content="Lead Engineer specializing in industrial layout design, ERP/BOM data integrity, and custom operational tracking tools. Systems engineering meets full-stack development.">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fhill KLO | Lead Systems & Operations Engineer">
+    <meta property="og:description" content="Engineering the intersection of physical layout and data accuracy — industrial systems, ERP/BOM integrity, and full-stack operational tools.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,12 +23,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">FHILL<span>.KLO</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
-                <li><li><a href="#expertise">Expertise</a></li></li>
+                <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact" class="btn-primary-sm">Get In Touch</a></li>
             </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -30,7 +43,7 @@
             <p class="hero-subtitle">Specializing in heavy industrial floor optimization, 100% accurate ERP/BOM system integrity, data analytics, and custom full-stack operational tracking tools.</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn-primary">View Technical Projects</a>
-                <a href="#contact" class="btn-secondary">Contact Me</a>
+                <a href="assets/Hoeun-Resume.pdf" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
             </div>
         </div>
     </header>
@@ -42,8 +55,26 @@
         <div class="metric-item"><strong>Full-Stack</strong> <span>Custom App Dev</span></div>
     </section>
 
+    <!-- About -->
+    <section id="about" class="section reveal">
+        <div class="container about-grid">
+            <div class="about-photo">
+                <img src="assets/headshot.webp" alt="Portrait of Fhill KLO" width="220" height="220">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About</h2>
+                <p>I'm transitioning from IE Lean &amp; Innovation Supervisor into a Lead Engineer role, bridging shop-floor systems engineering with data-driven software tooling. My work sits at the boundary between physical operations &mdash; layout design, line balancing, machine placement &mdash; and the digital systems that track them: ERP records, BOM accuracy, and live performance dashboards.</p>
+                <p>I care about closing the gap between what's happening on the floor and what the data says is happening &mdash; and building the tools that make that gap disappear.</p>
+                <div class="social-links about-social">
+                    <a href="https://www.linkedin.com/in/hello-hoeurn-35181626a/" target="_blank" rel="noopener" class="btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/HelloHoeurn" target="_blank" rel="noopener" class="btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Core Expertise -->
-    <section id="expertise" class="section">
+    <section id="expertise" class="section alt-bg reveal">
         <div class="container">
             <h2 class="section-title">Technical Expertise</h2>
             <div class="grid-3">
@@ -67,25 +98,25 @@
     </section>
 
     <!-- Project Showcase -->
-    <section id="projects" class="section alt-bg">
+    <section id="projects" class="section reveal">
         <div class="container">
             <h2 class="section-title">Operational Case Studies</h2>
             <div class="grid-2">
-                
+
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="project-img"><img src="assets/project1.webp" alt="OEE tracking dashboard visualization" loading="lazy"></div>
                     <div class="project-content">
                         <span class="project-tag">Data Analytics & VSM</span>
                         <h3>Live OEE Tracking & Line Balancing Engine</h3>
-                        <p>A comprehensive system designed to parse, combine, and clean decentralized shifts production logs via Excel Power Query. Developed to run automated calculations on line manpower constraints, time-studies, and active capacity outputs.</p>
+                        <p>A comprehensive system designed to parse, combine, and clean decentralized shift production logs via Excel Power Query. Developed to run automated calculations on line manpower constraints, time-studies, and active capacity outputs.</p>
                         <a href="projects/oee-dashboard.html" class="project-link">Read Technical Breakdown <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder"><i class="fa-solid fa-draw-polygon"></i></div>
+                    <div class="project-img"><img src="assets/project2.webp" alt="AutoCAD industrial floor layout" loading="lazy"></div>
                     <div class="project-content">
                         <span class="project-tag">Facilities Engineering</span>
                         <h3>Industrial Floor Plan Optimization (PACTICS Layout)</h3>
@@ -94,26 +125,38 @@
                     </div>
                 </div>
 
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/project3.webp" alt="SMED changeover time study" loading="lazy"></div>
+                    <div class="project-content">
+                        <span class="project-tag">Lean & SMED</span>
+                        <h3>SMED Changeover Reduction</h3>
+                        <p>Video analysis and spaghetti diagramming exposed wasted motion in a 42-minute average changeover. Converted internal steps to external, introduced kitting and quick-release clamps to cut changeover time and lift uptime.</p>
+                        <a href="projects/smed-changeover.html" class="project-link">Read Technical Breakdown <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Connect / Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section alt-bg reveal">
         <div class="container center text-center">
             <h2>Let's Discuss Systems Architecture</h2>
             <p>Always open to discussing advanced industrial layouts, ERP data optimization projects, or custom software applications built for manufacturing environments.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/hello-hoeurn-35181626a/" target="_blank" class="btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/HelloHoeurn" target="_blank" class="btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/hello-hoeurn-35181626a/" target="_blank" rel="noopener" class="btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/HelloHoeurn" target="_blank" rel="noopener" class="btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Fhill KLO. Engineered from Siem Reap, Cambodia.</p>
+        <p>&copy; <span id="year"></span> Fhill KLO. Engineered from Siem Reap, Cambodia.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
