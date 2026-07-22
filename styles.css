@@ -285,6 +285,29 @@ body {
     transform: translateY(0);
 }
 
+/* In the Field Gallery */
+.gallery-grid { gap: 1.5rem; }
+.gallery-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 0;
+    transition: transform 0.25s, border-color 0.25s;
+}
+.gallery-item:hover { transform: translateY(-4px); border-color: var(--accent); }
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item figcaption {
+    padding: 1rem 1.25rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 /* Case Study Pages */
 .case-study {
     max-width: 760px;
