@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fhill KLO | Lead Systems & Operations Engineer</title>
+    <title>Fhill KLO | Lead Engineer, Pactics Cambodia</title>
+    <meta name="description" content="Lead Engineer at Pactics Cambodia specializing in IE/Lean engineering, AutoCAD industrial layouts, and live custom operational apps. Systems engineering meets full-stack development.">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fhill KLO | Lead Engineer, Pactics Cambodia">
+    <meta property="og:description" content="Engineering the intersection of physical layout and data accuracy at Pactics Cambodia — IE/Lean engineering, industrial layouts, and live custom apps.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,117 +23,122 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">FHILL<span>.KLO</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#apps">Deployed Apps</a></li>
-                <li><a href="#projects">Engineering Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#field">In the Field</a></li>
                 <li><a href="#contact" class="btn-primary-sm">Get In Touch</a></li>
             </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-container">
-            <span class="badge">Lead Engineer & Industrial Systems Architect</span>
-            <h1>Bridging Garment Engineering, Custom Software & Floor Automation.</h1>
-            <p class="hero-subtitle">Former IE Lean & Innovation Supervisor transitioning to Lead Engineer. Specialized in SMV estimations, line balancing, heavy 3D rack layout designs, ERP/BOM integrity, and custom production tracking applications.</p>
+            <span class="badge">IE Lean &amp; Innovation Supervisor &rarr; Lead Engineer, Pactics Cambodia</span>
+            <h1>Engineering the intersection of physical layout and data accuracy.</h1>
+            <p class="hero-subtitle">From operations breakdown and line balancing on the sewing floor to AutoCAD layouts and live custom apps &mdash; I build the tools that connect what's happening on the floor to what the enterprise systems say is happening.</p>
             <div class="hero-cta">
-                <a href="#apps" class="btn-primary">Explore Live Apps</a>
-                <a href="#projects" class="btn-secondary">View Layouts & Engineering</a>
+                <a href="#projects" class="btn-primary">View Technical Projects</a>
+                <a href="assets/Hoeun-Resume.pdf" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
             </div>
         </div>
     </header>
 
-    <!-- Metrics Bar -->
+    <!-- Metrics Ticker -->
     <section class="metrics-bar">
-        <div class="metric-item"><strong>3+</strong> <span>Deployed Factory Apps</span></div>
-        <div class="metric-item"><strong>100%</strong> <span>BOM & ERP Accuracy</span></div>
-        <div class="metric-item"><strong>AutoCAD & SketchUp</strong> <span>3D Heavy Racks & Floor Plans</span></div>
-        <div class="metric-item"><strong>Full IE Scope</strong> <span>SMV, Time Study & Line Balancing</span></div>
+        <div class="metric-item"><strong>3</strong> <span>Live Apps Deployed at Pactics</span></div>
+        <div class="metric-item"><strong>AutoCAD</strong> <span>+ SketchUp Floor Design</span></div>
+        <div class="metric-item"><strong>Full-Stack</strong> <span>HTML/CSS/JS + Power Query</span></div>
     </section>
 
-    <!-- Core Expertise -->
-    <section id="expertise" class="section">
-        <div class="container">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <i class="fa-solid fa-shirt card-icon"></i>
-                    <h3>IE & Garment Innovation</h3>
-                    <p>Mastery of operations breakdowns, SMV estimations, time studies, and line balancing. Experienced in sewing line schedule planning, specialized machine attachments, and garment innovation tools.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-cubes card-icon"></i>
-                    <h3>Layout & Heavy Structural Design</h3>
-                    <p>Expertise in AutoCAD Web, SketchUp, and drawing tools for facilities planning. Specialist in designing heavy industrial racks (e.g., 250x107x338 cm units) and optimizing green safety walkways.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-laptop-code card-icon"></i>
-                    <h3>Full-Stack App Dev & Data Systems</h3>
-                    <p>Building localized digital tracking systems (JavaScript, HTML/CSS, GitHub, Power Query). Driving high-level ERP alignment, BOM structural accuracy, and machine maintenance scheduling.</p>
+    <!-- About -->
+    <section id="about" class="section reveal">
+        <div class="container about-grid">
+            <div class="about-photo">
+                <img src="assets/headshot.webp" alt="Portrait of Fhill KLO" width="220" height="220">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About</h2>
+                <p>I'm transitioning from IE Lean &amp; Innovation Supervisor into a Lead Engineer role at <strong>Pactics Cambodia</strong> in Siem Reap, bridging shop-floor systems engineering with data-driven software tooling. My work spans operations breakdown and SMV estimation, AutoCAD/SketchUp facility layouts, and a suite of live custom apps I've built and deployed for the factory floor.</p>
+                <p>Looking ahead, I'm focused on executive systems engineering &mdash; ERP data accuracy, BOM structural integrity, and bridging floor telemetry directly to enterprise data.</p>
+                <div class="social-links about-social">
+                    <a href="https://www.linkedin.com/in/hello-hoeurn-35181626a/" target="_blank" rel="noopener" class="btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/HelloHoeurn" target="_blank" rel="noopener" class="btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Custom Deployed Apps -->
-    <section id="apps" class="section alt-bg">
+    <!-- Core Expertise -->
+    <section id="expertise" class="section alt-bg reveal">
         <div class="container">
-            <h2 class="section-title">Pactics Custom Software Ecosystem</h2>
-            <div class="grid-3">
-                
-                <div class="card app-card">
-                    <i class="fa-solid fa-boxes-stacked app-icon"></i>
-                    <h3>Pactics — Rack Tracker (Live)</h3>
-                    <p>A custom digital asset management app built to track heavy industrial storage rack allocation, dimensions, and real-time inventory capacity on the factory floor.</p>
-                    <span class="app-status">Active Production Tool</span>
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="grid-4">
+                <div class="card">
+                    <i class="fa-solid fa-industry card-icon"></i>
+                    <h3>IE, Operations &amp; Lean Engineering</h3>
+                    <p>Operations breakdown, SMV estimation, time studies, line balancing, and capacity planning. Sewing line schedule planning, machine allocation, spare parts management, and preventive maintenance scheduling. Garment innovation tools and automation integration on the sewing floor.</p>
                 </div>
-
-                <div class="card app-card">
-                    <i class="fa-solid fa-id-card-clip app-icon"></i>
-                    <h3>Machine Passport: PACTICS — Machine Documents</h3>
-                    <p>Digital history and documentation tracker per asset. Scans and pulls maintenance schedules, spare parts logs, and machine planning manuals instantly for mechanics.</p>
-                    <span class="app-status">Active Production Tool</span>
+                <div class="card">
+                    <i class="fa-solid fa-compass-drafting card-icon"></i>
+                    <h3>Design &amp; Industrial Layouts</h3>
+                    <p>AutoCAD Web floor planning, SketchUp 3D modeling, and precision rack/storage design. Visual and UI layout design in Photoshop for posters and internal tools.</p>
                 </div>
-
-                <div class="card app-card">
-                    <i class="fa-solid fa-warehouse app-icon"></i>
-                    <h3>Spare Parts Inventory: Pactics Factory Inventory</h3>
-                    <p>Live inventory management system for sewing machine spare parts, tracking intake, stock thresholds, and automated reorder points to prevent downtime.</p>
-                    <span class="app-status">Active Production Tool</span>
+                <div class="card">
+                    <i class="fa-solid fa-code card-icon"></i>
+                    <h3>App Development &amp; Digital Tools</h3>
+                    <p>Live custom operational apps deployed across the Pactics ecosystem &mdash; built with HTML/CSS/JS, versioned on GitHub. Power Query data pipelines and AI-assisted automation workflows.</p>
                 </div>
-
+                <div class="card">
+                    <i class="fa-solid fa-chart-network card-icon"></i>
+                    <h3>Lead Engineer Vision</h3>
+                    <p>Executive systems engineering: ERP data accuracy, Bill of Materials structural integrity, product costing analytics, and bridging floor telemetry directly to enterprise data.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Project Showcase -->
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
         <div class="container">
-            <h2 class="section-title">Featured Engineering Projects</h2>
+            <h2 class="section-title">Live Apps &mdash; The Pactics Ecosystem</h2>
             <div class="grid-2">
-                
+
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder"><i class="fa-solid fa-diagram-project"></i></div>
+                    <div class="project-img"><img src="assets/project1.webp" alt="Rack Tracker app interface" loading="lazy"></div>
                     <div class="project-content">
-                        <span class="project-tag">Industrial Layout & 3D CAD</span>
-                        <h3>Heavy Industrial Storage Rack & Floor Layout</h3>
-                        <p>Designed large-scale industrial storage systems (250 cm L x 107 cm W x 338 cm H) and full floor layouts in AutoCAD Web & SketchUp, optimizing machine placement and walk-space safety.</p>
-                        <a href="#" class="project-link">View CAD Breakdown <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="project-tag">Asset Tracking</span>
+                        <h3>Pactics &mdash; Rack Tracker</h3>
+                        <p>A live, deployed web app for tracking heavy-duty rack and storage assets across the factory in real time &mdash; location, status, and allocation history in one place instead of scattered across paper and memory.</p>
+                        <a href="projects/rack-tracker.html" class="project-link">Read Technical Breakdown <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder"><i class="fa-solid fa-sliders"></i></div>
+                    <div class="project-img"><img src="assets/project2.webp" alt="Machine Passport documentation app" loading="lazy"></div>
                     <div class="project-content">
-                        <span class="project-tag">IE & Production Optimization</span>
-                        <h3>Sewing Line Balancing & Machine Planning Engine</h3>
-                        <p>Engineered dynamic SMV estimation and time-study pipelines to re-balance garment assembly lines, optimizing machine allocation and maintenance schedules.</p>
-                        <a href="#" class="project-link">View IE Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="project-tag">Asset Documentation</span>
+                        <h3>PACTICS &mdash; Machine Documents</h3>
+                        <p>A digital "passport" for every machine on the floor &mdash; centralizing maintenance history, manuals, and specs per asset so any machine's full documentation is one lookup away.</p>
+                        <a href="projects/machine-passport.html" class="project-link">Read Technical Breakdown <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/project3.webp" alt="Factory spare parts inventory app" loading="lazy"></div>
+                    <div class="project-content">
+                        <span class="project-tag">Inventory Management</span>
+                        <h3>Pactics Factory Inventory</h3>
+                        <p>A live spare parts inventory app giving real-time visibility into stock levels and part locations &mdash; built to shrink the gap between a breakdown and the fix.</p>
+                        <a href="projects/factory-inventory.html" class="project-link">Read Technical Breakdown <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -131,22 +146,44 @@
         </div>
     </section>
 
+    <!-- In the Field -->
+    <section id="field" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">In the Field</h2>
+            <div class="grid-3 gallery-grid">
+                <figure class="gallery-item">
+                    <img src="assets/gallery-planning.webp" alt="Cross-functional planning session with engineering team" loading="lazy">
+                    <figcaption>Cross-functional planning with the engineering team</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/gallery-dev.webp" alt="Collaborative development session on operational tooling" loading="lazy">
+                    <figcaption>Building operational tooling side-by-side</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/gallery-training.webp" alt="Presenting operational training to staff" loading="lazy">
+                    <figcaption>Presenting operational training to staff</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
     <!-- Connect / Contact -->
-    <section id="contact" class="section alt-bg">
+    <section id="contact" class="section alt-bg reveal">
         <div class="container center text-center">
-            <h2>Let's Connect</h2>
-            <p>Open to collaborating on systems engineering, industrial web development, or factory floor digital transformations.</p>
-            <div class="social-links" style="margin-top: 2rem;">
-                <a href="https://www.linkedin.com/in/hello-hoeurn-35181626a/" target="_blank" class="btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/HelloHoeurn" target="_blank" class="btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            <h2>Let's Discuss Systems Architecture</h2>
+            <p>Always open to discussing advanced industrial layouts, ERP data optimization projects, or custom software applications built for manufacturing environments.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hello-hoeurn-35181626a/" target="_blank" rel="noopener" class="btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/HelloHoeurn" target="_blank" rel="noopener" class="btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Fhill KLO. Engineered in Siem Reap, Cambodia.</p>
+        <p>&copy; <span id="year"></span> Fhill KLO. Engineered from Siem Reap, Cambodia.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
