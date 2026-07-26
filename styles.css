@@ -289,6 +289,27 @@ body {
     transform: translateY(0);
 }
 
+/* Featured Callout */
+.featured-callout {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 1.75rem;
+    padding: 1.1rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text-main);
+    transition: transform 0.25s, border-color 0.25s;
+}
+.featured-callout:hover { transform: translateY(-2px); border-color: var(--accent); }
+.featured-callout i:first-child { font-size: 1.4rem; color: var(--accent); flex-shrink: 0; }
+.featured-callout span { flex-grow: 1; color: var(--text-muted); }
+.featured-callout span strong { color: var(--text-main); }
+.callout-arrow { font-size: 0.85rem; color: var(--text-muted); flex-shrink: 0; }
+
 /* In the Field Gallery */
 .gallery-grid { gap: 1.5rem; }
 .gallery-item {
