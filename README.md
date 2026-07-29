@@ -1,16 +1,36 @@
-# Hoeun — IE Executive Portfolio (Static Site)
+# Garment Tech Radar
 
-This is a fast, accessible static portfolio you can deploy on GitHub Pages or Netlify.
+A lightweight news dashboard for tracking garment manufacturing tech, automation, and digital tooling news. Built to match the visual language of the main portfolio (`hello-portfolio.hoeurnhello.workers.dev`).
 
-## Quick start
-1. Edit content in `index.html` and `/projects/*.html`.
-2. Replace placeholder images in `/assets/` (keep same filenames) and add your PDF resume to `/assets/Hoeun-Resume.pdf`.
-3. Update your domain in `<link rel="canonical">`, Open Graph tags, `robots.txt` and `sitemap.xml` (find `your-domain.com`).
-4. Deploy: drag this folder to Netlify **or** push to a GitHub repo and enable **Pages**.
+## What's in this zip
+```
+tools/
+└── garment-tech-radar.html   ← the full tool, ready to deploy
+```
 
-## Local preview
-Just open `index.html` in a browser. No build step required.
+## Adding it to your portfolio repo
 
-## Contact form (Netlify)
-The form is configured with `data-netlify="true"`. It will work out of the box on Netlify (Forms).
+1. Copy the `tools/` folder into the root of your portfolio repo, alongside `index.html`, `projects/`, etc.
+2. Commit and push:
+   ```bash
+   git add tools/garment-tech-radar.html
+   git commit -m "Add Garment Tech Radar tool"
+   git push
+   ```
+3. It will publish at:
+   ```
+   https://hello-portfolio.hoeurnhello.workers.dev/tools/garment-tech-radar.html
+   ```
+4. Optional — link it from your nav in `index.html`:
+   ```html
+   <li><a href="tools/garment-tech-radar.html">Tech Radar</a></li>
+   ```
+5. Optional — add it to `sitemap.xml`:
+   ```xml
+   <url><loc>https://hello-portfolio.hoeurnhello.workers.dev/tools/garment-tech-radar.html</loc></url>
+   ```
 
+## Notes
+- Custom feeds you add are saved via `localStorage` — persistent per browser/device, no server sync.
+- Preloaded default feeds (Apparel Resources, Just Style, Fibre2Fashion) — worth double-checking their RSS URLs are still live, since publications change endpoints occasionally.
+- News fetching uses the free rss2json API client-side; no backend required.
